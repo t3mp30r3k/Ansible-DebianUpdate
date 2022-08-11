@@ -1,6 +1,6 @@
 ---
 - name: Update Debian Repository
-  hosts: debian
+  hosts: servers
   become: yes
   gather_facts: False
   remote_user: root 
