@@ -3,7 +3,7 @@
   hosts: servers
 #  become: yes
   gather_facts: False
-#  remote_user: rusdi 
+  remote_user: rusdi 
   tasks:
   - name: Update apt repo and cache on all Debian/Ubuntu boxes
     apt:
