@@ -1,9 +1,9 @@
 ---
 - name: Update Debian Repository
   hosts: servers
-#  become: yes
+  become: no
   gather_facts: False
-  remote_user: rusdi 
+  remote_user: rusdi
   tasks:
   - name: Update apt repo and cache on all Debian/Ubuntu boxes
     apt:
