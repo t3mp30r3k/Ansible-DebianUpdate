@@ -1,9 +1,9 @@
 ---
 - name: Update Debian Repository
   hosts: servers
-  become: no
+  become: yes
   gather_facts: False
-  remote_user: rusdi
+#  remote_user: root
   tasks:
   - name: Update apt repo and cache on all Debian/Ubuntu boxes
     apt:
@@ -19,9 +19,9 @@
   - name: Install required packages
     apt:
       name:
-        - build-essential
-        - curl
-        - libssl-dev
+#        - build-essential
+#        - curl
+#        - libssl-dev
         - wget
       state: latest
       
