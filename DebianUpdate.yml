@@ -5,7 +5,7 @@
   gather_facts: False
 #  remote_user: root
   vars:
-  ansible_python_interpreter: /usr/bin/python3
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
   - name: Update apt repo and cache on all Debian/Ubuntu boxes
     apt:
